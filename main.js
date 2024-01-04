@@ -1,13 +1,8 @@
-var swfobject = {};
-
-swfobject.embedSWF = function(url, cont, width, height){
+swfobject.embedSWF = function(url, cont) {
     var ruffle = window.RufflePlayer.newest(),
         player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-            width: width,
-            height: height,
-            style: 'width: ' + width + 'px; height: ' + height + 'px',
+            style: 'position: fixed; top: 0; left: 0; width: 100%; height: 100%;',
         });
 
     player.load({ url: url });
 }
-
