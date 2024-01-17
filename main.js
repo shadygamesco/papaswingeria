@@ -1,5 +1,5 @@
-//Set save file name(MUST HAVE .data)
-var savefilename = 'example.data';
+//Set save file name(MUST NOT HAVE A FILE EXTENTION)
+var savefilename = 'example';
 
 var swfobject = {};
 
@@ -88,3 +88,7 @@ function uploadMainSave() {
     document.body.removeChild(hiddenUpload);
   });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  swfobject.embedSWF("https://jonasrhee1208wastaken.github.io/cacheoswf/jacksmith.swf", 'ruffle', 800, 600);
+});
