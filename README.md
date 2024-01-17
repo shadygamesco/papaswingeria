@@ -3,4 +3,4 @@ Quick-Deploy Ruffle.
 
 
 # UPDATES:
--Added a download save and upload save function(you can change save name in index.js)
+-Added a download save and upload save function(you can change save name in main.js)
