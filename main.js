@@ -1,18 +1,6 @@
 //Set save file name(MUST NOT HAVE A FILE EXTENTION)
 var savefilename = 'example';
 
-var swfobject = {};
-
-swfobject.embedSWF = function(url, cont, width, height){
-    var ruffle = window.RufflePlayer.newest(),
-        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-            width: width,
-            height: height,
-            style: 'width: ' + width + 'px; height: ' + height + 'px',
-        });
-
-    player.load({ url: url });
-}
 
 function getMainSave() {
   var mainSave = {};
